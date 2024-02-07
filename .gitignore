@@ -1,3 +1,9 @@
+# Deployment
+scripts/deploy.js
+contracts/ZNSDeployer.sol
+src/*
+docs/*
+
 # Logs
 logs
 *.log
