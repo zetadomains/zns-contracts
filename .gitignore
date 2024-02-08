@@ -3,6 +3,7 @@ scripts/deploy.js
 contracts/ZNSDeployer.sol
 src/*
 docs/*
+scripts/*
 
 # Logs
 logs
