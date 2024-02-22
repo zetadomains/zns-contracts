@@ -200,8 +200,8 @@
       ]
     },
     "/Users/rdonmez/Documents/zns-contracts/contracts/zetaRegistrar/StablePriceOracle.sol": {
-      "lastModificationDate": 1707239841213,
-      "contentHash": "9f8ff9e3784438f6807ac226b991b1f2",
+      "lastModificationDate": 1708602993237,
+      "contentHash": "1ae6f8d958df791382714b2f35f72e0e",
       "sourceName": "contracts/zetaRegistrar/StablePriceOracle.sol",
       "solcConfig": {
         "version": "0.8.20",
@@ -228,6 +228,7 @@
         }
       },
       "imports": [
+        "./IPyth.sol",
         "./IPriceOracle.sol",
         "./StringUtils.sol",
         "@openzeppelin/contracts/access/Ownable.sol"
@@ -2830,8 +2831,8 @@
       ]
     },
     "/Users/rdonmez/Documents/zns-contracts/contracts/ZNSDeployer.sol": {
-      "lastModificationDate": 1707308924973,
-      "contentHash": "d45753a7dcdd8e3b802b1a05f822cfa2",
+      "lastModificationDate": 1708602243717,
+      "contentHash": "72eddc4c8a996d6fd47b28c11250ef3b",
       "sourceName": "contracts/ZNSDeployer.sol",
       "solcConfig": {
         "version": "0.8.20",
@@ -2866,7 +2867,8 @@
         "./zetaRegistrar/BaseRegistrarImplementation.sol",
         "./zetaRegistrar/StablePriceOracle.sol",
         "./zetaRegistrar/ZetaRegistrarController.sol",
-        "./resolvers/PublicResolver.sol"
+        "./resolvers/PublicResolver.sol",
+        "./zetaRegistrar/IPyth.sol"
       ],
       "versionPragmas": [
         "^0.8.20"
@@ -2909,6 +2911,80 @@
       ],
       "artifacts": [
         "Create2"
+      ]
+    },
+    "/Users/rdonmez/Documents/zns-contracts/contracts/zetaRegistrar/IPyth.sol": {
+      "lastModificationDate": 1708601956084,
+      "contentHash": "9352dd86f2cfe19deef6c3e5e48bd2ce",
+      "sourceName": "contracts/zetaRegistrar/IPyth.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./PythStructs.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IPyth"
+      ]
+    },
+    "/Users/rdonmez/Documents/zns-contracts/contracts/zetaRegistrar/PythStructs.sol": {
+      "lastModificationDate": 1708601935690,
+      "contentHash": "e5d1401621d68e334aa46207f74acc71",
+      "sourceName": "contracts/zetaRegistrar/PythStructs.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "PythStructs"
       ]
     }
   }
